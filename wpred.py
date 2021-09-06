@@ -91,9 +91,9 @@ X_test = df_precip[:"2021"].drop(["Lufttemperatur"], axis=1)
 y_test = df_precip.loc[:"2021", "Lufttemperatur"]
 
 models = []
-#models.append(("KNN", KNeighborsRegressor()))
+models.append(("KNN", KNeighborsRegressor()))
 models.append(("RF", RandomForestRegressor(n_estimators=10)))
-#models.append(("MLP", MLPRegressor()))
+models.append(("MLP", MLPRegressor()))
 
 results = []
 names = []
