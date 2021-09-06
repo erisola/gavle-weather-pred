@@ -108,7 +108,3 @@ for name, model in models:
 plt.boxplot(results, labels=names)
 plt.title("Comparison")
 plt.show()
-
-# Future predictions
-
-last_date = df.index[-1]
